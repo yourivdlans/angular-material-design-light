@@ -1,0 +1,29 @@
+{
+  "name": "angular-material-design-light",
+  "version": "0.1.0",
+  "homepage": "https://github.com/PaterSantyago/angular-material-design-light",
+  "authors": [
+    "Yury S. Glushkov"
+  ],
+  "description": "Angular directives for Material Design Light",
+  "main": "./angular-material-design-light.js",
+  "keywords": [
+    "angular",
+    "mdl",
+    "material",
+    "design",
+    "light"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.2",
+    "material-design-lite": "~1.0.0"
+  }
+}

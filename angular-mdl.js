@@ -34,7 +34,10 @@
             (function(directiveName, classAsString) {
                 module.directive(directiveName, function() {
                     return {
-                        compile: function(element) {
+                        link: function(scope, element, attributes) {
+                            scope.$on('$destroy', function(){
+                                componentHandler.downgradeElements([element[0]]);
+                            });
                             componentHandler.upgradeElement(element[0], classAsString);
                         },
                         restrict: "C"
